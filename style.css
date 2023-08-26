@@ -115,6 +115,7 @@ nav ul li a:hover::after {
   font-weight: 500;
   cursor: pointer;
   position: relative;
+  transition: all 0.5s;
 }
 
 .tab-links::after {
@@ -130,6 +131,10 @@ nav ul li a:hover::after {
 
 .tab-links.active-link::after {
   width: 50%;
+}
+
+.tab-links:hover {
+  color: #b93d65;
 }
 
 .tab-contents {
@@ -298,7 +303,12 @@ nav ul li a:hover::after {
 .contact-left p i {
   color: #ff004f;
   margin-right: 15px;
-  font-size: 25px;
+  font-size: 20px;
+}
+
+.contact-left p span {
+  line-height: 20px;
+  cursor: pointer;
 }
 
 .social-icons {
@@ -453,4 +463,16 @@ nav .fas {
   100% {
     top: 0;
   }
+}
+
+/* Css for handling the display of caption on successful copy of contact details */
+span.alert {
+  color: #61b752;
+  margin-left: 40px;
+  margin-top: 10px;
+  display: none;
+}
+
+span.alert.show {
+  display: block;
 }
