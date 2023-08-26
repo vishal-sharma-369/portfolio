@@ -327,5 +327,62 @@
         }, 1200);
       }
     </script>
+
+    <script src="anime.js"></script>
+    <script>
+      var tl = anime.timeline({
+        easing: "easeOutExpo",
+      });
+      // Add children
+      tl.add({
+        targets: ".header-text p",
+        translateY: 100,
+        opacity: 0,
+        duration: 0,
+      }).add({
+        targets: ".header-text p",
+        translateY: 0,
+        opacity: 1,
+        duration: 1000,
+      });
+
+      let tl3 = anime.timeline({
+        easing: "easeOutExpo",
+      });
+
+      tl3.add({
+        targets: ".header-text h1",
+        translateY: 100,
+        opacity: 0,
+        duration: 0,
+      });
+      tl3.add({
+        targets: ".header-text h1",
+        translateY: 0,
+        opacity: 1,
+        delay: 500,
+        duration: 1000,
+      });
+
+      let tl2 = anime.timeline({
+        easing: "easeOutExpo",
+      });
+      tl2
+        .add({
+          targets: "#side-menu > li",
+          translateY: 20,
+          duration: 0,
+          opacity: 0,
+        })
+        .add({
+          targets: "#side-menu > li",
+          translateY: 0,
+          duration: 500,
+          delay: function (el, i, l) {
+            return 1000 + i * 100;
+          },
+          opacity: 1,
+        });
+    </script>
   </body>
 </html>
