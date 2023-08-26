@@ -482,3 +482,16 @@ span.alert {
 span.alert.show {
   display: block;
 }
+
+/* Handling the loading animation css */
+#loader {
+  font-size: 30px;
+  font-weight: 600;
+  color: white;
+  display: flex;
+  background: #080808;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}

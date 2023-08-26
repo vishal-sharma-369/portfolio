@@ -14,240 +14,273 @@
     />
   </head>
   <body>
-    <div id="header">
-      <div class="container">
-        <nav id="navigation-bar">
-          <img src="images/logo.png" class="logo" />
-          <ul id="side-menu">
-            <li><a href="#header">Home </a></li>
-            <li><a href="#about">About </a></li>
-            <li><a href="#services">Services </a></li>
-            <li><a href="#portfolio">Portfolio </a></li>
-            <li><a href="#contact">Contact </a></li>
-            <i class="fas fa-times" onclick="closeMenu()"></i>
-          </ul>
-          <i class="fas fa-bars" onclick="openMenu()"></i>
-        </nav>
-
-        <div class="header-text">
-          <p>UI/UX Designer</p>
-          <h1>
-            Hi, I'm <span>Kevin</span><br />
-            Jen From Australia
-          </h1>
-        </div>
-      </div>
+    <div id="loader">
+      <div>Loading...</div>
     </div>
+    <div class="wrapper">
+      <div id="header">
+        <div class="container">
+          <nav id="navigation-bar">
+            <img src="images/logo.png" class="logo" />
+            <ul id="side-menu">
+              <li><a href="#header">Home </a></li>
+              <li><a href="#about">About </a></li>
+              <li><a href="#services">Services </a></li>
+              <li><a href="#portfolio">Portfolio </a></li>
+              <li><a href="#contact">Contact </a></li>
+              <i class="fas fa-times" onclick="closeMenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openMenu()"></i>
+          </nav>
 
-    <!-- ----------about----------- -->
-    <div id="about">
-      <div class="container">
-        <div class="row">
-          <div class="about-col-1">
-            <img src="images/user.png" alt="" />
-          </div>
-          <div class="about-col-2">
-            <h1 class="sub-title">About Me</h1>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-              eos eaque molestiae ipsam dignissimos sunt delectus possimus in
-              consequuntur nostrum excepturi soluta eius adipisci, numquam
-              quisquam laborum commodi quod natus.
-            </p>
-
-            <div class="tab-titles">
-              <p class="tab-links active-link" onclick="opentab('skills')">
-                Skills
-              </p>
-              <p class="tab-links" onclick="opentab('experience')">
-                Experience
-              </p>
-              <p class="tab-links" onclick="opentab('education')">Education</p>
-            </div>
-
-            <div class="tab-contents active-tab" id="skills">
-              <ul>
-                <li><span>UI?UX</span><br />Designing Web/App interfaces</li>
-                <li><span>Web Development</span><br />Web app development</li>
-                <li>
-                  <span>App Development</span><br />Building Android/ios apps
-                </li>
-              </ul>
-            </div>
-
-            <div class="tab-contents" id="experience">
-              <ul>
-                <li>
-                  <span>2021 - current</span><br />UI/UX Design Training at ET
-                  Institution
-                </li>
-                <li><span>2019 - 2021</span><br />Team lead at StarApp LLC.</li>
-                <li>
-                  <span>2017 - 2019</span><br />UI/UX Design Executive at Coin
-                  Digital Ltd.
-                </li>
-                <li>
-                  <span>2016 - 2017</span><br />Internship at ekart eCommerce.
-                </li>
-              </ul>
-            </div>
-            <div class="tab-contents" id="education">
-              <ul>
-                <li>
-                  <span>2016</span><br />UI/UX Design Training at ET Institute
-                </li>
-                <li><span>2016</span><br />MBA from MIT Bangalore.</li>
-                <li><span>2016</span><br />BBA from ISM Bangalore.</li>
-              </ul>
-            </div>
+          <div class="header-text">
+            <p>UI/UX Designer</p>
+            <h1>
+              Hi, I'm <span>Kevin</span><br />
+              Jen From Australia
+            </h1>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- ------------- services ---------------- -->
-    <div id="services">
-      <div class="container">
-        <h1 class="sub-title">My Services</h1>
-        <div class="services-list">
-          <div>
-            <i class="fas fa-code"></i>
-            <h1>Web Design</h1>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi qui
-              molestias voluptate, explicabo quo expedita commodi pariatur
-              culpa, accusantium distinctio accusamus iusto. Autem incidunt
-              modi, illo ab nostrum maxime tempora.
-            </p>
-            <a href="#">Learn more</a>
-          </div>
-          <div>
-            <i class="fas fa-crop-alt"></i>
-            <h1>UI/UX Design</h1>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi qui
-              molestias voluptate, explicabo quo expedita commodi pariatur
-              culpa, accusantium distinctio accusamus iusto. Autem incidunt
-              modi, illo ab nostrum maxime tempora.
-            </p>
-            <a href="#">Learn more</a>
-          </div>
-          <div>
-            <i class="fab fa-app-store"></i>
-            <h1>App Design</h1>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi qui
-              molestias voluptate, explicabo quo expedita commodi pariatur
-              culpa, accusantium distinctio accusamus iusto. Autem incidunt
-              modi, illo ab nostrum maxime tempora.
-            </p>
-            <a href="#">Learn more</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div id="portfolio">
-      <div class="container">
-        <div class="sub-title">My Work</div>
-        <div class="work-list">
-          <div class="work">
-            <img src="images/work-1.png" alt="" />
-            <div class="layer">
-              <h3>Social Media Application</h3>
+      <!-- ----------about----------- -->
+      <div id="about">
+        <div class="container">
+          <div class="row">
+            <div class="about-col-1">
+              <img src="images/user.png" alt="" />
+            </div>
+            <div class="about-col-2">
+              <h1 class="sub-title">About Me</h1>
               <p>
-                The app connects you to the talented people around the
-                world.Download it from google play store.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Incidunt eos eaque molestiae ipsam dignissimos sunt delectus
+                possimus in consequuntur nostrum excepturi soluta eius adipisci,
+                numquam quisquam laborum commodi quod natus.
               </p>
-              <a href="#"
-                ><i class="fa-solid fa-arrow-up-right-from-square"></i
-              ></a>
-            </div>
-          </div>
-          <div class="work">
-            <img src="images/work-2.png" alt="" />
-            <div class="layer">
-              <h3>Music App</h3>
-              <p>
-                The app connects you to the talented people around the
-                world.Download it from google play store.
-              </p>
-              <a href="#"
-                ><i class="fa-solid fa-arrow-up-right-from-square"></i
-              ></a>
-            </div>
-          </div>
-          <div class="work">
-            <img src="images/work-3.png" alt="" />
-            <div class="layer">
-              <h3>Online Shopping App</h3>
-              <p>
-                The app connects you to the talented people around the
-                world.Download it from google play store.
-              </p>
-              <a href="#"
-                ><i class="fa-solid fa-arrow-up-right-from-square"></i
-              ></a>
+
+              <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">
+                  Skills
+                </p>
+                <p class="tab-links" onclick="opentab('experience')">
+                  Experience
+                </p>
+                <p class="tab-links" onclick="opentab('education')">
+                  Education
+                </p>
+              </div>
+
+              <div class="tab-contents active-tab" id="skills">
+                <ul>
+                  <li><span>UI?UX</span><br />Designing Web/App interfaces</li>
+                  <li><span>Web Development</span><br />Web app development</li>
+                  <li>
+                    <span>App Development</span><br />Building Android/ios apps
+                  </li>
+                </ul>
+              </div>
+
+              <div class="tab-contents" id="experience">
+                <ul>
+                  <li>
+                    <span>2021 - current</span><br />UI/UX Design Training at ET
+                    Institution
+                  </li>
+                  <li>
+                    <span>2019 - 2021</span><br />Team lead at StarApp LLC.
+                  </li>
+                  <li>
+                    <span>2017 - 2019</span><br />UI/UX Design Executive at Coin
+                    Digital Ltd.
+                  </li>
+                  <li>
+                    <span>2016 - 2017</span><br />Internship at ekart eCommerce.
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="education">
+                <ul>
+                  <li>
+                    <span>2016</span><br />UI/UX Design Training at ET Institute
+                  </li>
+                  <li><span>2016</span><br />MBA from MIT Bangalore.</li>
+                  <li><span>2016</span><br />BBA from ISM Bangalore.</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-
-        <a href="#" class="btn">See more</a>
       </div>
-    </div>
 
-    <!-- --------contact ------------- -->
-    <div id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="contact-left">
-            <h1 class="sub-title">Contact Me</h1>
-            <p>
-              <i class="fas fa-paper-plane"></i>
-              <span id="email" onclick="copyToClipboard('email')"
-                >vishalsharma34258@gmail.com</span
+      <!-- ------------- services ---------------- -->
+      <div id="services">
+        <div class="container">
+          <h1 class="sub-title">My Services</h1>
+          <div class="services-list">
+            <div>
+              <i class="fas fa-code"></i>
+              <h1>Web Design</h1>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi
+                qui molestias voluptate, explicabo quo expedita commodi pariatur
+                culpa, accusantium distinctio accusamus iusto. Autem incidunt
+                modi, illo ab nostrum maxime tempora.
+              </p>
+              <a href="#">Learn more</a>
+            </div>
+            <div>
+              <i class="fas fa-crop-alt"></i>
+              <h1>UI/UX Design</h1>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi
+                qui molestias voluptate, explicabo quo expedita commodi pariatur
+                culpa, accusantium distinctio accusamus iusto. Autem incidunt
+                modi, illo ab nostrum maxime tempora.
+              </p>
+              <a href="#">Learn more</a>
+            </div>
+            <div>
+              <i class="fab fa-app-store"></i>
+              <h1>App Design</h1>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi
+                qui molestias voluptate, explicabo quo expedita commodi pariatur
+                culpa, accusantium distinctio accusamus iusto. Autem incidunt
+                modi, illo ab nostrum maxime tempora.
+              </p>
+              <a href="#">Learn more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="portfolio">
+        <div class="container">
+          <div class="sub-title">My Work</div>
+          <div class="work-list">
+            <div class="work">
+              <img src="images/work-1.png" alt="" />
+              <div class="layer">
+                <h3>Social Media Application</h3>
+                <p>
+                  The app connects you to the talented people around the
+                  world.Download it from google play store.
+                </p>
+                <a href="#"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+            </div>
+            <div class="work">
+              <img src="images/work-2.png" alt="" />
+              <div class="layer">
+                <h3>Music App</h3>
+                <p>
+                  The app connects you to the talented people around the
+                  world.Download it from google play store.
+                </p>
+                <a href="#"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+            </div>
+            <div class="work">
+              <img src="images/work-3.png" alt="" />
+              <div class="layer">
+                <h3>Online Shopping App</h3>
+                <p>
+                  The app connects you to the talented people around the
+                  world.Download it from google play store.
+                </p>
+                <a href="#"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <a href="#" class="btn">See more</a>
+        </div>
+      </div>
+
+      <!-- --------contact ------------- -->
+      <div id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="contact-left">
+              <h1 class="sub-title">Contact Me</h1>
+              <p>
+                <i class="fas fa-paper-plane"></i>
+                <span id="email" onclick="copyToClipboard('email')"
+                  >vishalsharma34258@gmail.com</span
+                >
+                <span class="alert"> copied to clipboard! </span>
+              </p>
+              <p>
+                <i class="fas fa-phone-square-alt"></i>
+                <span id="phone" onclick="copyToClipboard('phone')"
+                  >+91600574089</span
+                >
+                <span class="alert"> copied to clipboard! </span>
+              </p>
+              <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter-square"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+              </div>
+              <a href="images/my-cv.pdf" download class="btn btn2"
+                >Download CV</a
               >
-              <span class="alert"> copied to clipboard! </span>
-            </p>
-            <p>
-              <i class="fas fa-phone-square-alt"></i>
-              <span id="phone" onclick="copyToClipboard('phone')"
-                >+91600574089</span
-              >
-              <span class="alert"> copied to clipboard! </span>
-            </p>
-            <div class="social-icons">
-              <a href="#"><i class="fab fa-facebook"></i></a>
-              <a href="#"><i class="fab fa-twitter-square"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-linkedin"></i></a>
             </div>
-            <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
-          </div>
-          <div class="contact-right">
-            <form action="">
-              <input type="text" name="Name" placeholder="Your Name" required />
-              <input
-                type="email"
-                name="Email"
-                placeholder="Your Email"
-                required
-              />
-              <textarea
-                name="Message"
-                rows="6"
-                placeholder="Your Message"
-              ></textarea>
-              <button type="submit" class="btn btn2">Submit</button>
-            </form>
-            <span id="msg"></span>
+            <div class="contact-right">
+              <form action="">
+                <input
+                  type="text"
+                  name="Name"
+                  placeholder="Your Name"
+                  required
+                />
+                <input
+                  type="email"
+                  name="Email"
+                  placeholder="Your Email"
+                  required
+                />
+                <textarea
+                  name="Message"
+                  rows="6"
+                  placeholder="Your Message"
+                ></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+              </form>
+              <span id="msg"></span>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="copyright">
-        <p>Copyright ©️ Kevin. Made with ❤️ by Vishal Sharma</p>
+        <div class="copyright">
+          <p>Copyright ©️ Kevin. Made with ❤️ by Vishal Sharma</p>
+        </div>
       </div>
     </div>
+
+    <!-- Loader -->
+    <!-- Script for handling the loading state of website -->
+    <script>
+      document.onreadystatechange = function () {
+        if (document.readyState !== "complete") {
+          console.log("loading");
+          document.querySelector(".wrapper").style.display = "none";
+          document.querySelector("#loader").style.display = "flex";
+        } else {
+          setTimeout(() => {
+            document.querySelector("#loader").style.display = "none";
+            document.querySelector(".wrapper").style.display = "block";
+          }, 2000);
+        }
+      };
+    </script>
 
     <script>
       let tablinks = document.getElementsByClassName("tab-links");
@@ -330,75 +363,77 @@
 
     <script src="anime.js"></script>
     <script>
-      let tl4 = anime.timeline({
-        easing: "linear",
-      });
-
-      tl4.add({
-        targets: "#header",
-        opacity: 0,
-        duration: 0,
-      });
-      tl4.add({
-        targets: "#header",
-        opacity: 1,
-        duration: 1000,
-      });
-
-      var tl = anime.timeline({
-        easing: "easeOutExpo",
-      });
-      // Add children
-      tl.add({
-        targets: ".header-text p",
-        translateY: 100,
-        opacity: 0,
-        duration: 0,
-      }).add({
-        targets: ".header-text p",
-        translateY: 0,
-        opacity: 1,
-        duration: 1000,
-        delay: 400,
-      });
-
-      let tl3 = anime.timeline({
-        easing: "easeOutExpo",
-      });
-
-      tl3.add({
-        targets: ".header-text h1",
-        translateY: 100,
-        opacity: 0,
-        duration: 0,
-      });
-      tl3.add({
-        targets: ".header-text h1",
-        translateY: 0,
-        opacity: 1,
-        delay: 500,
-        duration: 1000,
-      });
-
-      let tl2 = anime.timeline({
-        easing: "easeOutExpo",
-      });
-      tl2
-        .add({
-          targets: "#side-menu > li",
-          translateY: 20,
-          duration: 0,
-          opacity: 0,
-        })
-        .add({
-          targets: "#side-menu > li",
-          translateY: 0,
-          duration: 500,
-          delay: function (el, i, l) {
-            return 1000 + i * 100;
-          },
-          opacity: 1,
+      setTimeout(() => {
+        let tl4 = anime.timeline({
+          easing: "linear",
         });
+
+        tl4.add({
+          targets: "#header",
+          opacity: 0,
+          duration: 0,
+        });
+        tl4.add({
+          targets: "#header",
+          opacity: 1,
+          duration: 1000,
+        });
+
+        var tl = anime.timeline({
+          easing: "easeOutExpo",
+        });
+        // Add children
+        tl.add({
+          targets: ".header-text p",
+          translateY: 100,
+          opacity: 0,
+          duration: 0,
+        }).add({
+          targets: ".header-text p",
+          translateY: 0,
+          opacity: 1,
+          duration: 1000,
+          delay: 400,
+        });
+
+        let tl3 = anime.timeline({
+          easing: "easeOutExpo",
+        });
+
+        tl3.add({
+          targets: ".header-text h1",
+          translateY: 100,
+          opacity: 0,
+          duration: 0,
+        });
+        tl3.add({
+          targets: ".header-text h1",
+          translateY: 0,
+          opacity: 1,
+          delay: 500,
+          duration: 1000,
+        });
+
+        let tl2 = anime.timeline({
+          easing: "easeOutExpo",
+        });
+        tl2
+          .add({
+            targets: "#side-menu > li",
+            translateY: 20,
+            duration: 0,
+            opacity: 0,
+          })
+          .add({
+            targets: "#side-menu > li",
+            translateY: 0,
+            duration: 500,
+            delay: function (el, i, l) {
+              return 1000 + i * 100;
+            },
+            opacity: 1,
+          });
+      }, 2000);
     </script>
   </body>
 </html>
