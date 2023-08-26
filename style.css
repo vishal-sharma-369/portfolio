@@ -65,7 +65,7 @@ nav ul li a:hover::after {
   width: 100%;
 }
 
-.header-text h1 {
+.header-text {
   margin-top: 20%;
   font-size: 30px;
 }
@@ -431,4 +431,26 @@ nav .fas {
   color: #61b752;
   margin-top: -40px;
   display: block;
+}
+
+/* Extra css for handling other applications */
+/* Css for handling the position of navigation bar on scolling */
+#navigation-bar.show {
+  position: fixed;
+  z-index: 10;
+  background-color: #080808;
+  left: 10%;
+  right: 10%;
+  top: 0;
+  animation: navanimation 0.5s ease-in-out;
+  padding: 10px 0;
+}
+
+@keyframes navanimation {
+  0% {
+    top: -50px;
+  }
+  100% {
+    top: 0;
+  }
 }

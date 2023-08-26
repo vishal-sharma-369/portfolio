@@ -9,7 +9,7 @@
   <body>
     <div id="header">
       <div class="container">
-        <nav>
+        <nav id="navigation-bar">
           <img src="images/logo.png" class="logo" />
           <ul id="side-menu">
             <li><a href="#header">Home </a></li>
@@ -254,6 +254,28 @@
 
     <script>
       const msg = document.getElementById("msg");
+    </script>
+
+    <!-- Script for handling the position of navigation bar on scrolling  -->
+    <script>
+      // keep track of previous scroll position
+      let prevScrollPos = window.pageYOffset;
+
+      window.addEventListener("scroll", function () {
+        // current scroll position
+        const currentScrollPos = window.pageYOffset;
+
+        if (prevScrollPos > currentScrollPos) {
+          // user has scrolled up
+          document.querySelector("#navigation-bar").classList.add("show");
+        } else {
+          // user has scrolled down
+          document.querySelector("#navigation-bar").classList.remove("show");
+        }
+
+        // update previous scroll position
+        prevScrollPos = currentScrollPos;
+      });
     </script>
   </body>
 </html>
