@@ -330,6 +330,21 @@
 
     <script src="anime.js"></script>
     <script>
+      let tl4 = anime.timeline({
+        easing: "linear",
+      });
+
+      tl4.add({
+        targets: "#header",
+        opacity: 0,
+        duration: 0,
+      });
+      tl4.add({
+        targets: "#header",
+        opacity: 1,
+        duration: 1000,
+      });
+
       var tl = anime.timeline({
         easing: "easeOutExpo",
       });
@@ -344,6 +359,7 @@
         translateY: 0,
         opacity: 1,
         duration: 1000,
+        delay: 400,
       });
 
       let tl3 = anime.timeline({
