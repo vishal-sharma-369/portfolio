@@ -119,4 +119,13 @@ mm.add("(min-width: 600px)", () => {
       start: "top 70%",
     },
   });
+  gsap.from(".work-list .work", {
+    opacity: 0,
+    scale: 0.7,
+    duration: 0.5,
+    scrollTrigger: {
+      trigger: ".work-list",
+      start: "top 70%",
+    },
+  });
 });
