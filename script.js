@@ -23,12 +23,39 @@ mm.add("(max-width: 600px)", () => {
       start: "top 70%",
     },
   });
-  gsap.from(".services-list div", {
+  // gsap.from(".services-list div", {
+  //   opacity: 0,
+  //   scale: 0.7,
+  //   duration: 0.2,
+  //   scrollTrigger: {
+  //     trigger: ".services-list",
+  //     start: "top 70%",
+  //   },
+  // });
+  gsap.from("#service1", {
     opacity: 0,
     scale: 0.7,
     duration: 0.2,
     scrollTrigger: {
-      trigger: ".services-list",
+      trigger: "#service1",
+      start: "top 70%",
+    },
+  });
+  gsap.from("#service2", {
+    opacity: 0,
+    scale: 0.7,
+    duration: 0.2,
+    scrollTrigger: {
+      trigger: "#service2",
+      start: "top 70%",
+    },
+  });
+  gsap.from("#service3", {
+    opacity: 0,
+    scale: 0.7,
+    duration: 0.2,
+    scrollTrigger: {
+      trigger: "#service3",
       start: "top 70%",
     },
   });
