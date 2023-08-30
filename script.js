@@ -10,7 +10,7 @@ if (width < 600) {
     duration: 0.8,
     scrollTrigger: {
       trigger: ".about-col-1",
-      start: 150,
+      start: 35,
     },
   });
   gsap.from(".about-col-2", {
@@ -21,7 +21,16 @@ if (width < 600) {
     scale: 1.4,
     scrollTrigger: {
       trigger: ".about-col-2",
-      start: 500,
+      start: 300,
+    },
+  });
+  gsap.from(".services-list div", {
+    opacity: 0,
+    scale: 0.7,
+    duration: 0.2,
+    scrollTrigger: {
+      trigger: ".services-list",
+      start: 1200,
     },
   });
 } else {
@@ -46,14 +55,13 @@ if (width < 600) {
       start: "top 70%",
     },
   });
+  gsap.from(".services-list div", {
+    opacity: 0,
+    scale: 0.7,
+    duration: 0.2,
+    scrollTrigger: {
+      trigger: ".services-list",
+      start: "top 70%",
+    },
+  });
 }
-
-gsap.from(".services-list div", {
-  opacity: 0,
-  scale: 0.7,
-  duration: 0.2,
-  scrollTrigger: {
-    trigger: ".services-list",
-    start: "top 70%",
-  },
-});
