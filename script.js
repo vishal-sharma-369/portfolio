@@ -59,6 +59,33 @@ mm.add("(max-width: 600px)", () => {
       start: "top 70%",
     },
   });
+  gsap.from("#work1", {
+    opacity: 0,
+    scale: 0.7,
+    duration: 0.2,
+    scrollTrigger: {
+      trigger: "#work1",
+      start: "top 70%",
+    },
+  });
+  gsap.from("#work2", {
+    opacity: 0,
+    scale: 0.7,
+    duration: 0.2,
+    scrollTrigger: {
+      trigger: "#work2",
+      start: "top 70%",
+    },
+  });
+  gsap.from("#work3", {
+    opacity: 0,
+    scale: 0.7,
+    duration: 0.2,
+    scrollTrigger: {
+      trigger: "#work3",
+      start: "top 70%",
+    },
+  });
 });
 
 mm.add("(min-width: 600px)", () => {
