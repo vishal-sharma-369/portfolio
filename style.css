@@ -494,4 +494,5 @@ span.alert.show {
   height: 100vh;
   justify-content: center;
   align-items: center;
+  position: fixed;
 }

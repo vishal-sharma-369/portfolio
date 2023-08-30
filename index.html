@@ -46,7 +46,7 @@
       <!-- ----------about----------- -->
       <div id="about">
         <div class="container">
-          <div class="row">
+          <div class="row" id="about-row">
             <div class="about-col-1">
               <img src="images/user.png" alt="" />
             </div>
@@ -271,12 +271,10 @@
       document.onreadystatechange = function () {
         if (document.readyState !== "complete") {
           console.log("loading");
-          document.querySelector(".wrapper").style.display = "none";
           document.querySelector("#loader").style.display = "flex";
         } else {
           setTimeout(() => {
             document.querySelector("#loader").style.display = "none";
-            document.querySelector(".wrapper").style.display = "block";
           }, 2000);
         }
       };
@@ -435,5 +433,10 @@
           });
       }, 2000);
     </script>
+
+    <!-- Embedding gsap into the code -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
