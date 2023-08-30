@@ -22,3 +22,13 @@ gsap.from(".about-col-2", {
     start: "top 70%",
   },
 });
+
+gsap.from(".services-list div", {
+  opacity: 0,
+  scale: 0.7,
+  duration: 0.2,
+  scrollTrigger: {
+    trigger: ".services-list div",
+    start: "top 70%",
+  },
+});
