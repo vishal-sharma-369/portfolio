@@ -27,6 +27,10 @@ body {
   padding: 10px 10%;
 }
 
+.navigation-bar {
+  position: absolute;
+}
+
 nav {
   display: flex;
   align-items: center;
