@@ -28,7 +28,7 @@ gsap.from(".services-list div", {
   scale: 0.7,
   duration: 0.2,
   scrollTrigger: {
-    trigger: ".services-list div",
+    trigger: ".services-list",
     start: "top 70%",
   },
 });
