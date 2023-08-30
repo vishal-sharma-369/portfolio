@@ -1,8 +1,7 @@
-let width = window.innerWidth;
-
 gsap.registerPlugin(ScrollTrigger);
+let mm = gsap.matchMedia();
 
-if (width < 600) {
+mm.add("(max-width: 600px)", () => {
   gsap.from(".about-col-1", {
     x: -300,
     opacity: 0,
@@ -10,7 +9,7 @@ if (width < 600) {
     duration: 0.8,
     scrollTrigger: {
       trigger: ".about-col-1",
-      start: 35,
+      start: "top center",
     },
   });
   gsap.from(".about-col-2", {
@@ -21,7 +20,7 @@ if (width < 600) {
     scale: 1.4,
     scrollTrigger: {
       trigger: ".about-col-2",
-      start: 300,
+      start: "top 70%",
     },
   });
   gsap.from(".services-list div", {
@@ -30,10 +29,12 @@ if (width < 600) {
     duration: 0.2,
     scrollTrigger: {
       trigger: ".services-list",
-      start: 1200,
+      start: "top 70%",
     },
   });
-} else {
+});
+
+mm.add("(min-width: 600px)", () => {
   gsap.from(".about-col-1", {
     x: -300,
     opacity: 0,
@@ -64,4 +65,4 @@ if (width < 600) {
       start: "top 70%",
     },
   });
-}
+});
